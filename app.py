@@ -163,7 +163,7 @@ st.markdown("""
 # -------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load(r"C:\Users\linzj\Desktop\SEER_CRC_saved_models_and_preds\models\best_xgb_pipeline.pkl")
+    return joblib.load("best_xgb_pipeline.pkl")
 
 model = load_model()
 
